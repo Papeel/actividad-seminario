@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  background-color: rgb(220, 0, 0);
+  color: aliceblue;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-top: -8;
+  padding-top: 1px;
+  margin-right: -8px;
+
+  box-shadow: 0px 8px 0px black;
+}
+
+.documento {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.resumen{
+  margin-top: 50px;
+}
+
+body{
+  background: rgb(240, 240, 240);
+}
