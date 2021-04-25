@@ -20,8 +20,9 @@
     <ul>
       <li><h4>Autor: <a href="https://www.linkedin.com/in/nelson-gonzález-machín-b9a407173/">Nelson Gonález Machín</a></h4></li>
       <li><h4 >Url: <a href="https://actividad-seminario.stackblitz.io/">https://actividad-seminario.stackblitz.io/</a></h4></li>
+      <li><h4>Editor: <a href="https://stackblitz.com/edit/actividad-seminario?file=index.html">https://stackblitz.com/edit/actividad-seminario?file=index.html<a></h4></li>
       <li><h4>Fuente: <a href="http://catalogo.datosabiertos.gob.ec/dataset/viaticos-informes-y-justificativos-ministerio-de-relaciones-exteriores-y-movilidad-humana">http://catalogo.datosabiertos.gob.ec/dataset/viaticos-informes-y-justificativos-ministerio-de-relaciones-exteriores-y-movilidad-humana</a></h4></li>
-      <li><h4 >Fecha: 24/04/2021</h4></li>
+      <li><h4 >Fecha: 25/04/2021</h4></li>
     </ul>  
 
 
@@ -38,12 +39,13 @@
         <li>Valor del viático</li>
       </ul>
 
-      <p>Lo que me gustaría transmitir es que el estado es corrupto.</p>
+      <p>Lo que me gustaría transmitir con este trabajo es ver si se está haciendo un buen uso de los viáticos otorgados.</p>
 
 
       <h2>Cantidad de viáticos otorgados por puesto institucional.</h2>
       <p>Uso un gráfico de barras horizontal para representar la cantidad de viáticos otorgados por puesto institucional. Este tipo de gráfico es adecuado en este caso para representar con precision la cantidad. El uso de un gráfico de tarta no sería adecuado ya que al poseer varios puestos institucionales la propoción generada para cada puesto no sería demasiado precisa.
       Se ha utilizado la herramienta seaborn para el gráfico de barras.</p>
+
       <div class="imagen">
         <a href="https://ibb.co/Mks5wmW"><img src="https://i.ibb.co/xqD89NP/countplot.png" alt="countplot"  /></a>
       </div> 
@@ -51,13 +53,13 @@
 
       <h2>Días de viaje vs Valor del viático.</h2>
 
-      <p>Uso un gráfico de disperción para representar la relación entre entre el número de días de viaje y el viático otorgado. Este gráfico es adecuado en este caso ya que, de forma visual, te da la posiblidad de ver si existe una relación lineal o exponencial. Se ha utilizado datawarpper para el gráfico de disperción.</p>
+      <p>Uso un gráfico de disperción para representar la relación entre entre el número de días de viaje y el viático otorgado. Este gráfico es adecuado en este caso ya que, de forma visual, te da la posiblidad de ver si existe una relación lineal o exponencial. Se ha utilizado datawarpper para el gráfico de disperción. Viendo esta gráfica se observa una tendecia lineal de modo que cuanto más días de viaje mayor será el valor del viático. Sin embargo hay tres datos sospechosos en el rango [10 - 15] que no forman parte de ese comportamiento lineal.</p>
       <div class="imagen">
         <iframe title="Días de viaje vs Valor del viático" aria-label="chart" id="datawrapper-chart-yHiq8" src="https://datawrapper.dwcdn.net/yHiq8/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="400"></iframe>
       </div> 
 
       <h2>Palabras más utilizadas en los motivos del viaje.</h2>  
-
+      <p>Uso un gráfico de palabras para representar la palabras más utilizadas en los motivos de viaje. He elegido este gráfico debido que a simple vista destaca aquellas palabras más utilizadas. Se ha utilizado tableau para el desarrollo de este gráfico porque tableau me permite quitar mediante filtros aquellas palabras poco significante como puede ser determinantes conjunciones y preposiciones. Viendo el gráfico las palabras más destacas son "Consulado", "Movil", "Participar" y "Ecuador". Estas cuatros palabras concuerdan con la actividad normal del tercer puesto institucional que más cantidad de viático ha pedido. Las demás palabras tienen relación con la actividad que hubo después de las elecciones que hubo en el año 2017.</p>
       <div class="imagen">
         <a href="https://ibb.co/SXyzxp3"><img src="https://i.ibb.co/Fb3FWtD/palabras.png" alt="palabras"  /></a>
       </div>
