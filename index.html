@@ -2,7 +2,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.2/d3plus.full.min.js"></script>
+  
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>República del Ecuador</title>
 </head>
@@ -25,7 +28,7 @@
 
     <div class="resumen">
       <h2>Resumen</h2>
-      <p>El objetivo de este trabajo es crear  visualizaciones para obtener información sobre los viáticos otorgados para viajes o asignaciones de las autoridades, dignatarios y funcionarios públicos de la institución de la repúblíca del ecuador. Para ello se ha utilizado un conjunto de datos de 139 regístros con 6 campos que son:</p>
+      <p>El objetivo de este trabajo es crear  visualizaciones para obtener información sobre los viáticos otorgados para viajes o asignaciones de las autoridades, dignatarios y funcionarios públicos de la institución de la repúblíca del ecuador. Para ello se ha utilizado un conjunto de datos de 138 regístros con 6 campos que son:</p>
       <ul>
         <li>Tipo viaje Nacional / Internacional</li>
         <li>Puesto institucional</li>
@@ -36,14 +39,36 @@
       </ul>
 
       <p>Lo que me gustaría transmitir es que el estado es corrupto</p>
+
+
+      <h2>Cantidad de viáticos otorgados por puesto institucional</h2>
+      <p>Uso un gráfico de barras horizontal para representar la cantidad de viáticos otorgados por puesto institucional. Este tipo de gráfico es adecuado en este caso para representar con precision la cantidad. El uso de un gráfico de tarta no sería adecuado ya que al poseer varios puestos institucionales la propoción generada para cada puesto no sería demasiado precisa.
+      Se ha utilizado la herramienta seaborn para el gráfico de barras.</p>
+      <div class="imagen">
+        <a href="https://ibb.co/Mks5wmW"><img src="https://i.ibb.co/xqD89NP/countplot.png" alt="countplot"  /></a>
+      </div> 
+
+
+      <h2>Días de viaje vs Valor del viático</h2>
+
+      <p>Uso un gráfico de disperción para representar la relación entre entre el número de días de viaje y el viático otorgado. Este gráfico es adecuado en este caso ya que, de forma visual, te da la posiblidad de ver si existe una relación lineal o exponencial. Se ha utilizado datawarpper para el gráfico de disperción.</p>
+      <div class="imagen">
+        <iframe title="Días de viaje vs Valor del viático" aria-label="chart" id="datawrapper-chart-yHiq8" src="https://datawrapper.dwcdn.net/yHiq8/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="400"></iframe>
+      </div>   
     </div> 
+
+
+
+    <!--<div id="viz1"></div>-->
   </div>
 
   
 
 
 
-  
+  <script src="script.js"></script>
+  <script src="graficas.js"></script>
+
 </body>
 
 </html>

@@ -15,7 +15,7 @@
 
 .documento {
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 13%;
 }
 
 .resumen{
@@ -24,4 +24,11 @@
 
 body{
   background: rgb(240, 240, 240);
+}
+
+
+.imagen{
+  text-align:center;
+  border: 1;
+  border-color: black;
 }
